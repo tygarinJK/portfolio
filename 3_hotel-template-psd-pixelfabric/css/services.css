@@ -1,0 +1,12 @@
+.let_care {
+	padding: 0 10px 35px;
+	text-align: center;
+	border-bottom: 2px dashed #c8c8c8;
+}
+.serv {
+	padding-top: 50px;
+}
+.thumbnail img, .thumbnail h3 {
+	width: 100%;
+	cursor: pointer;
+}

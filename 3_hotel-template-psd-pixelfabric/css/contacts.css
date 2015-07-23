@@ -1,0 +1,34 @@
+.cont {
+	padding: 40px 60px;
+	box-sizing: border-box;
+}
+
+.map iframe {
+	width: 100%;
+	height: 305px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+}
+
+.cont_form {
+	margin-bottom: 10px;
+}
+
+.cont_form p {
+	font-family: 'open_sansbold', Arial, sans-serif; 
+}
+
+.cont_form input, .cont_form select,  .cont_form textarea {
+	color: #717171;
+	font-family: 'open_sans', Arial, sans-serif;
+	font-size: 12px;
+}
+.cont .send_succes {
+	display: inline-block;
+	text-align: right;
+	padding-right: 20px;
+	line-height: 35px;
+}
+.form_btn {
+	max-width: 137px;
+}

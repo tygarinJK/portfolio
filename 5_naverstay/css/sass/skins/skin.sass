@@ -1,0 +1,97 @@
+@import "../bourbon/bourbon"
+
+$color_skin: #FF6347 //Theme skin
+$color_txt: #222
+$color_txt_light: #E9EAE4
+$bg_darck: #212121
+$bg_light: #E9EAE4
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $color_txt
+	background-color: #FAFAFA
+	+kerning(1)
+
+a
+	color: #fff
+	&:hover
+		color: $color_skin
+
+p
+	color: $color_txt
+
+._imp
+	color: $color_skin
+
+.head-mnu
+	background-color: rgba(0,0,0,.8)
+	.nav__item.active
+		.nav__item-link
+			color: $color_skin
+	.nav__item-link
+		color: #fff
+		&:hover
+			color: $color_skin
+
+.head-main
+	box-shadow: 0 0 0 1000px rgba(0,0,0,.7)
+	background-color: rgba(0,0,0,.7)
+	&__name
+		color: $color_txt_light
+		@include border-color($color_txt_light)
+		+kerning(3)
+	&__descr
+		color: $color_txt_light
+		+kerning(5)
+
+.sect-head
+	&__name
+		+kerning(3)
+	&__descr
+		+kerning(5)
+
+.about-lay
+	background-color: $bg_light
+
+.resume__item__date
+	color: $color_txt_light
+	background-color: $color_skin
+	+kerning(2)
+
+.port-lay
+	color: $color_txt_light
+	background-color: $bg_darck
+	.sect-head__descr
+		color: $color_txt_light
+		&::after
+			border-bottom-color: $color_txt_light
+
+.port__nav__item.active
+	color: #fff
+	border-bottom: 1px solid $color_skin
+
+.port__main__item__hover
+	background-color: rgba(0,0,0,.7)
+	&__head
+		+kerning(3)
+	&__descr
+		color: $color_txt_light
+	&__btn
+		color: $color_skin
+		border: 1px solid $color_skin
+
+.contact__item__icon
+	color: $color_skin
+
+.form__item
+	border: 1px solid $bg_darck
+	&__btn
+		color: $color_skin
+		border: 2px solid $color_skin
+
+.footer-lay
+	background-color: $bg_darck
+	.footer__copy
+		color: $color_txt_light

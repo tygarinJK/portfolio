@@ -1,0 +1,21 @@
+.overview h4 {
+	border-top: 1px dashed #cdcdcd;
+}
+.contact p{
+	line-height: 37px;
+	margin: 0;
+	border-top: 1px solid #cdcdcd;
+}
+.contact p:first-child {
+	border: none;
+	font-family: 'open_sans', Arial, sans-serif;
+}
+.phone {
+	background: url(../images/phone.png) no-repeat center right 
+}
+.chat {
+	background: url(../images/chat.png) no-repeat center right 
+}
+.mail {
+	background: url(../images/mail.png) no-repeat center right 
+}

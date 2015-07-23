@@ -1,0 +1,94 @@
+@import "../bourbon/bourbon"
+
+$color_txt_lht: #fff
+$color_txt_drk: #3c4761
+$color_link: #fff
+
+$head_bg: #87509c
+$head_btn_color: #eb7d4b
+
+$about_bg: #17c2a4
+
+$team_bg: #e7f1f8
+$team_pos_color: #30bae7
+
+$port_bg: #ffdd99
+$port_btn_color: #17c2a4
+
+$blog_bg: #d74680
+$blog_pos_color: #ffdd99
+
+$contact_bg: #3c5499
+$contact_btn_color: $team_pos_color
+
+$footer_soc_color: $team_pos_color
+
+body
+	color: $color_txt_lht
+
+a
+	color: $color_link
+
+._txt-drk
+	color: $color_txt_drk
+
+.header-lay
+	background-color: $head_bg
+
+.navbar
+	background-color: $head_bg
+	.nav
+		background-color: $head_bg
+
+.nav__item.active
+	.nav__item-link
+		background-color: darken( $head_bg, 10% )
+
+.header-main__btn
+	background-color: $head_btn_color
+	border-bottom: 3px solid darken( $head_btn_color, 10% )
+
+.service-lay
+	background-color: $about_bg
+
+.team-lay
+	background-color: $team_bg
+.about__item__pos
+	color: $team_pos_color
+.about__item__soc .icon
+	color: #bdd1df
+	&:hover
+		color: $team_pos_color
+
+.port-lay
+	background-color: $port_bg
+.port-nav
+	.filter
+		background-color: rgba(0,0,0,.1)
+		color: $color_txt_drk
+		&.active
+			background-color: #fff
+.port__item__descr
+	color: $color_txt_drk
+.port__btn
+	color: #fff
+	background-color: $port_btn_color
+	border-bottom: 3px solid darken( $port_btn_color, 10% )
+
+.blog-lay
+	background-color: $blog_bg
+	.blog__item__pos
+		color: $blog_pos_color
+
+.contact-lay
+	background-color: $contact_bg
+	.contact__item
+		background-color: darken( $contact_bg, 10% )
+		&__btn
+			background-color: $contact_btn_color
+			border-bottom: 3px solid darken( $contact_btn_color, 10% )
+
+.footer-lay
+	background-color: darken( $contact_bg, 5% )
+	.footer__item-link:hover
+		color: $footer_soc_color

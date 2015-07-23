@@ -1,0 +1,95 @@
+.b_info h3 {
+	margin-top: 0;
+}
+.room_attr p,
+.room_feat p {
+	border-bottom: 1px solid #cdcdcd;
+    color: #6d6b6b;
+    display: block;
+    font-family: "open_sans",sans-serif,arial;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 14px 45px 14px 3px;
+    margin: 0;
+    position: relative;
+}
+.room_attr p:last-of-type,
+.room_feat p:last-of-type {
+	border: none;
+}
+.room_attr p::after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 20px;
+	margin-top: -10px;
+	background: url(../images/sprite2.png) no-repeat center;
+	right: 0;
+	top: 50%;
+}
+.room_attr p:nth-of-type(1)::after {
+	background-position: 0 0;
+}
+.room_attr p:nth-of-type(2)::after {
+	background-position: 0 -20px;
+}
+.room_attr p:nth-of-type(3)::after {
+	background-position: 0 -40px;
+}
+.room_attr p:nth-of-type(4)::after {
+	background-position: 0 -60px;
+}
+.room_attr p:nth-of-type(5)::after {
+	background-position: 0 -80px;
+}
+.room_attr p:nth-of-type(6)::after {
+	background-position: 0 -100px;
+}
+a.visa,
+a.am_expr,
+a.paypal,
+a.m_card {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../images/card_sprite.png) center no-repeat;
+}
+a.visa {
+	background-position: 0 0;
+}
+a.am_expr {
+	background-position: -32px 0;
+}
+a.paypal {
+	background-position: -64px 0;
+}
+a.m_card {
+	background-position: -96px 0 ;
+}
+.header-fot {
+	height: auto;
+	background: none;
+}
+.fotorama__nav {
+    height: 100px;
+    margin-top: -116px;
+}
+.fotorama__nav__shaft {
+	padding-top: 16px;
+}
+.fotorama1432047811601 .fotorama__nav--thumbs .fotorama__nav__frame,
+.fotorama__active {
+    padding: 0 !important;
+}
+.fotorama__thumb {
+	border-radius: 5px;
+}
+.fotorama__active {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}

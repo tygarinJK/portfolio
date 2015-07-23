@@ -1,0 +1,130 @@
+.slider {
+     position: relative;
+}
+ .carousel-caption {
+     top: 50%;
+     left: 15%;
+     display: table;
+}
+ .carousel-caption h1, h2 {
+     margin: 0;
+     padding: 0 17px;
+     position: relative;
+     text-transform: uppercase;
+}
+ .carousel-caption h1 {
+     display: table;
+     font-family: 'DaxCondensedExtraBold', Arial, sans-serif;
+     font-size: 28px;
+     background: #2a2a2a;
+}
+ .carousel-caption h1:after {
+     content: '';
+     width: 0;
+     height: 0;
+     position: absolute;
+     border-top: 30px solid #2a2a2a;
+     border-bottom: 10px solid transparent;
+     border-right: 10px solid transparent;
+     left: 100%;
+     top: 0;
+}
+ .carousel-caption h2 {
+     display:table;
+     font-family: 'open_sanslight', Arial, sans-serif;
+     font-size: 20px;
+     background: #52abdf;
+}
+ .carousel-caption h2:after {
+     content: '';
+     width: 0;
+     height: 0;
+     position: absolute;
+     border-top: 23px solid #52abdf;
+     border-bottom: 10px solid transparent;
+     border-right: 10px solid transparent;
+     left: 100%;
+     top: 0;
+}
+ .main_inner {
+     position: relative;
+}
+ .book_cont {
+     min-height: 100px;
+     margin-top: -50px;
+     border: 1px solid #d3d3d3;
+     border-radius: 3px;
+     box-shadow: 0 -1px 2px rgba(0,0,0,.5);
+     background: #fff;
+}
+.bi_wrap {
+	padding: 0;
+}
+ .book_invite {
+     height: 98px;
+     padding: 10px 15px;
+     border-right: 1px solid #d3d3d3;
+     box-sizing: border-box;
+     background-color: #f3f3f3;
+}
+ .book_invite h4 {
+     font-family: 'open_sansbold', Arial, sans-serif;
+     font-size: 18px;
+}
+ .book_invite p {
+     font-family: 'open_sans', Arial, sans-serif;
+     font-size: 10px;
+}
+ .bf_wrap {
+     padding: 0;
+}
+ .book_form {
+     height: 98px;
+     padding: 19px 5px;
+    
+     box-sizing: padding-box;
+     float: left;
+}
+ .type_room, .ch_date {
+     width: 50%;
+}
+ .num {
+     width: 25%;
+}
+ .book_form.book_btn {
+     padding-right: 15px;
+	 padding-top: 41px;
+     width: 100%;
+}
+ input.form_btn {
+     color: #fff;
+}
+ .book-room {
+     padding: 40px 0;
+}
+ @media (max-width: 700px) {
+     .carousel-caption h1 {
+         font-size: 20px;
+    }
+     .carousel-caption h1:after {
+         border-top: 22px solid #2a2a2a;
+    }
+     .carousel-caption h2 {
+         font-size: 15px;
+    }
+     .carousel-caption h2:after {
+         border-top: 17px solid #52abdf;
+    }
+}
+ @media (max-width: 450px) {
+     .carousel-caption h1 {
+         display: none;
+    }
+     .carousel-caption h1:after {
+         display: none;
+    }
+     .book_cont {
+         margin-top: 0;
+    }
+}
+ 

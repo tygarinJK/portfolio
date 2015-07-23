@@ -1,0 +1,23 @@
+@font-face {
+	font-family:"MyriadProRegular";
+	src:url(../fonts/MyriadProRegular.eot) format('eot'),
+		url(../fonts/MyriadProRegular.otf) format('otf'),
+		url(../fonts/MyriadProRegular.ttf) format('truetype'),
+		url(../fonts/MyriadProRegular.woff) format('woff');
+	font-weight: normal;
+}
+@font-face {
+	font-family:"MyriadProCondensed";
+	src:url(../fonts/MyriadProCondensed.ttf) format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family:"MyriadProCondensedItalic";
+	src:url(../fonts/MyriadProCondensedItalic.ttf) format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family:"MyriadProBoldCondensedItalic";
+	src:url(../fonts/MyriadProBoldCondensedItalic.ttf) format('truetype');
+	font-weight: bold;
+}

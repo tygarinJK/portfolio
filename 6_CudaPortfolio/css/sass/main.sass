@@ -1,0 +1,347 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Titillium Web", sans-serif
+	font-weight: normal
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+header
+	padding-top: 40px
+	padding-bottom: 140px
+
+section
+	padding-top: 115px
+	padding-bottom: 140px
+
+._push-right
+	float: right
+
+._pull-left
+	float: left
+
+.hidden
+	display: none
+
+._btn
+	display: block
+	margin: 0 auto
+	margin-top: 30px
+	width: 293px
+	height: 70px
+	line-height: 70px
+	text-transform: uppercase
+	border-radius: 5px
+	border: none
+	font-weight: 600
+
+.header-lay
+	position: relative
+	min-height: 620px
+
+.navbar
+	min-height: 50px
+	line-height: 50px
+	.nav
+		margin: 0
+		padding: 0
+		list-style-type: none
+		&__item
+			margin: 0
+			padding: 0
+			float: left
+			text-align: center
+		&__item-link
+			margin: 0 4px
+			padding: 3px 17px
+			font-size: 16px
+			text-transform: uppercase
+			border-radius: 5px	
+	.navbar__logo__item
+		margin-bottom: 5px
+
+.navbar.fixed
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	padding: 0 15px
+
+.header-main
+	margin-top: 30%
+	text-align: center
+	&__item
+		font-size: 42px
+
+.sect-head
+	display: block
+	max-width: 690px
+	margin: 0 auto
+	margin-bottom: 75px
+	padding: 0 20px
+	text-align: center
+	&__name
+		margin: 0
+		padding-bottom: 15px
+		position: relative
+		font-size: 40px
+		&::after
+			content: ''
+			position: absolute
+			width: 85px
+			height: 3px
+			margin-left: -42px
+			background-color: rgba(0,0,0,.2)
+			left: 50%
+			bottom: 0
+	&__descr
+		margin: 20px 0 0 0
+
+.about__item
+	text-align: center
+	&__img
+		display: block
+		height: 150px
+		margin: 0 auto
+	&__head
+		margin: 53px 0 5px 0
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 26px
+	&__descr
+		margin: 20px 0 0 0
+		font-weight: 300
+		font-size: 16px
+	&__pos
+		margin: 0
+		font-size: 16px
+	&__soc
+		margin: 0 10px
+		font-size: 32px
+		.icon
+			@include transition(all .6s ease)
+
+.team-lay
+	.about__item
+		&__img
+			height: 200px
+			width: 200px
+			border-radius: 50%
+			background-color: #555
+
+.skils-lay
+	.about__item
+		&__chart-area-lay
+			display: block
+			margin: 0 auto
+			position: relative
+			width: 160px
+			height: 160px
+		&__chart-area
+			width: 160px
+			height: 160px
+			&__descr
+				position: absolute
+				top: 45px
+				left: 28%
+				font-weight: 300
+				font-size: 50px
+				span
+					font-size: 32px
+
+.port-lay
+	.sect-head
+		margin-bottom: 30px
+
+.port-nav
+	margin-bottom: 45px
+	text-align: center
+	.filter
+		display: inline-block
+		padding: 10px 27px
+		margin: 10px 5px
+		border-radius: 5px
+		text-transform: uppercase
+		cursor: pointer
+
+.port
+	.mix
+		display: none
+.port__item
+	margin-bottom: 50px
+	&__img-lay
+		display: block
+		position: relative
+		margin: 0 auto
+		width: 430px
+		height: 250px
+		@include background (url("../img/laptop.png") center no-repeat)
+		background-size: cover
+	&__img
+		height: 206px
+		left: 50px
+		position: absolute
+		top: 14px
+		width: 330px
+	&__head
+		text-transform: uppercase
+		text-align: center
+	&__capt
+		display: block
+		position: relative
+		margin: 0 auto
+		padding: 15px
+		max-width: 750px
+		background-color: #fff
+		img
+			width: 100%
+	&__descr
+		text-align: center
+		font-weight: 600
+		font-size: 14px
+		margin-top: 30px
+
+.mfp-fade.mfp-bg 
+	opacity: 0
+	@include transition(all 0.15s ease-out)
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing 
+	opacity: 0
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0
+	@include transition(all 0.35s ease-out)
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+	opacity: 1
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0
+
+
+.blog-lay
+	padding-bottom: 0
+.blog
+	&__item
+		margin-bottom: 135px
+		&__img
+			display: block
+			width: 25%
+			border-radius: 50%
+			background-color: #555
+			float: left
+		&__cont
+			width: 70%
+			margin-left: 5%
+			padding: 15px
+			display: inline-block
+			float: left
+		&__descr
+			font-size: 21px
+			font-style: italic
+		&__name
+			margin-bottom: 0
+			font-weight: 600
+			text-transform: uppercase
+		&__pos
+			margin: 0
+
+.contact
+	&__item
+		width: 100%
+		margin-bottom: 30px
+		padding: 15px
+		border-radius: 5px
+		border: none
+	._input
+		height: 55px
+
+.footer
+	min-height: 110px
+	line-height: 110px
+	text-align: center
+	&__item-link
+		margin: 0 25px
+		text-wrap: 600
+		font-size: 24px
+		@include transition(all .3s)
+
+/* Sandwich Btn */
+
+$w: 40px
+$h: 4px
+
+#sandwich 
+	width: $w
+	height: $w
+	margin: 5px
+	position: relative
+	display: none
+	float: right
+
+.sw-topper
+	position: absolute
+	display: block
+	top: $h * 2
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	/* transition-delay: 0.2s, 0s; */
+
+.sw-bottom
+	position: absolute
+	width: $w
+	height: $h
+	top: $h * 4
+
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s 
+
+.sw-footer
+	position: absolute
+	width: $w
+	height: $h
+	top: $h * 6
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: .1s
+
+#sandwich.active 
+	.sw-topper
+		top: 17px
+		transform: rotate(135deg)
+	.sw-bottom
+		top: 17px
+		transform: rotate(-135deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+/* End Sandwich Btn */

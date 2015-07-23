@@ -1,0 +1,74 @@
+body {
+  color: #fff; }
+
+a {
+  color: #fff; }
+
+._txt-drk {
+  color: #3c4761; }
+
+.header-lay {
+  background-color: #87509c; }
+
+.navbar {
+  background-color: #87509c; }
+  .navbar .nav {
+    background-color: #87509c; }
+
+.nav__item.active .nav__item-link {
+  background-color: #6a3f7a; }
+
+.header-main__btn {
+  background-color: #eb7d4b;
+  border-bottom: 3px solid #e65c1d; }
+
+.service-lay {
+  background-color: #17c2a4; }
+
+.team-lay {
+  background-color: #e7f1f8; }
+
+.about__item__pos {
+  color: #30bae7; }
+
+.about__item__soc .icon {
+  color: #bdd1df; }
+  .about__item__soc .icon:hover {
+    color: #30bae7; }
+
+.port-lay {
+  background-color: #ffdd99; }
+
+.port-nav .filter {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #3c4761; }
+  .port-nav .filter.active {
+    background-color: #fff; }
+
+.port__item__descr {
+  color: #3c4761; }
+
+.port__btn {
+  color: #fff;
+  background-color: #17c2a4;
+  border-bottom: 3px solid #12947d; }
+
+.blog-lay {
+  background-color: #d74680; }
+  .blog-lay .blog__item__pos {
+    color: #ffdd99; }
+
+.contact-lay {
+  background-color: #3c5499; }
+  .contact-lay .contact__item {
+    background-color: #2e4074; }
+    .contact-lay .contact__item__btn {
+      background-color: #30bae7;
+      border-bottom: 3px solid #18a0cc; }
+
+.footer-lay {
+  background-color: #354a87; }
+  .footer-lay .footer__item-link:hover {
+    color: #30bae7; }
+
+/*# sourceMappingURL=skin.css.map */

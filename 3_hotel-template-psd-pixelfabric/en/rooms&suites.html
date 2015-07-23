@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel PARADISE Rooms & Suites</title>
+
+	<!-- Bootstrap -->
+	<link href="../css/fonts.css" rel="stylesheet">
+	<link href="../css/jquery-ui.css" rel="stylesheet">
+	<!-- <link href="../css/jquery-ui.structure.css" rel="stylesheet">
+	<link href="../css/jquery-ui.theme.css" rel="stylesheet"> -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/rooms_suites.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!--Header_menu-->
+	<div class="container-fluid header_menu">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-header">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-header">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="../index.html">Hotel</a>
+					</li>
+					<li>
+						<a href="rooms&suites.html">Rooms & Suites</a>
+					</li>
+					<li>
+						<a href="reservation.php">Reservation</a>
+					</li>
+					<li>
+						<a href="overview.html">About</a>
+					</li>
+					<li>
+						<a href="contacts.php">Contacts</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							En
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu lang" role="menu">
+							<li>
+								<a href="#">En</a>
+							</li>
+							<li>
+								<a href="#">Ru</a>
+							</li>
+							<li>
+								<a href="#">Ua</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--       end header_menu-->
+
+	<div class="container-fluid header">
+		<div class="header_grad"></div>
+		<div class="container">
+			<p class="h_label bottom">Rooms & Suites</p>
+		</div>
+	</div>
+	<!--       end header-->
+
+	<div class="container main_inner">
+		<div class="row">
+			<div class="main_inner_header">
+				<a href="rooms&suites.html">Overview</a>
+				<a href="rooms.html">Rooms</a>
+				<a href="suites.html">Suites</a>
+				<a href="pres-suite.html">Presidential Suite</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 pull-right side_form">
+				<h4> <strong>Room Atributes</strong>
+				</h4>
+				<div class="room_attr">
+					<p>Free WiFi Connection</p>
+					<p>Free entry to the rooftop Spa & Health Club</p>
+					<p>Mineral water in the room upon arrival</p>
+					<p>24-hour room service</p>
+					<p>Multimedia TV, Minibar, In-room safe, Individually controlled A/C</p>
+					<p>24-hour In-room_Dinning service</p>
+				</div>
+				<h4> <strong>Reservation</strong>
+				</h4>
+				<p>Request a reservation. We will come back to you shortly</p>
+				<form method="GET" action="reservation.php">
+					<select name="num_of_rooms" id="" class="form-control">
+						<option value="0" disabled selected>Select a Room..</option>
+						<option value="1">Single room</option>
+						<option value="2">Dooble room</option>
+						<option value="3">Suit room</option>
+					</select>
+					<div class="row">
+						<div class="col-xs-6 ch_date">
+							<input name="ch_in_date" type="text" class="form-control datepicker" placeholder="From"></div>
+						<div class="col-xs-6 ch_date">
+							<input name="ch_out_date" type="text" class="form-control datepicker" placeholder="To"></div>
+					</div>
+					<input name="submit" type="submit" class="form_btn" value="Book now">
+				</form>
+			</div>
+			<div class="col-xs-12 col-sm-7 pull-left">
+				<div class="b_info">
+					<h3>
+						Rooms & Suites with an Amathing
+						<strong>Paradise View</strong>
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem atque corporis error consequuntur, eius ipsam doloremque eaque rem aspernatur maiores non eos a temporibus sequi delectus distinctio nihil facilis culpa est ipsa nesciunt blanditiis libero saepe quam rerum. Perspiciatis ipsam repudiandae magni expedita natus aliquam vitae aut vel quasi omnis.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<a href="#">
+								<img src="../images/single-room.jpg" alt="single room"></a>
+							<div class="caption">
+								<h3>
+									<a href="#">Room</a>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit esse veritatis.!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<a href="#">
+								<img src="../images/double-room.jpg" alt="double room"></a>
+							<div class="caption">
+								<h3>
+									<a href="#">Suite</a>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aspernatur voluptates cumque, ea animi distinctio.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<a href="#">
+								<img src="../images/suite-room.jpg" alt="suit room"></a>
+							<div class="caption">
+								<h3>
+									<a href="#">Presedential Suite</a>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil magni, illo beatae laboriosam amet ea natus debitis aliquid tempore repellat.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--       Footer-->
+	<div class="container-fluid footer-wrap">
+		<div class="container footer">
+			<div class="col-xs-12 col-sm-4">
+				<div class="row copyright">
+					<p>&#169 2014 Paradise Hotel. All rights reserved.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="row social">
+					<a class="soc_twit" href="#"></a>
+					<a class="soc_face" href="#"></a>
+					<a class="soc_you" href="#"></a>
+					<a class="soc_pin" href="#"></a>
+					<a class="soc_flickr" href="#"></a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="row foot_menu">
+					<a href="../index.html">Hotel</a>
+					<a href="rooms&suites.html">Rooms & Suits</a>
+					<a href="reservation.php">Reservation</a>
+					<a href="contacts.php">Contacts</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--        end footer-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/config.json"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

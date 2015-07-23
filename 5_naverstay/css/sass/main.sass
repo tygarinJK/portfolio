@@ -1,0 +1,276 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+section
+	padding: 70px 0
+	overflow: hidden
+
+.hidden
+	display: none
+
+.head-lay
+	position: relative
+	min-height: 620px
+	overflow: hidden
+	.head-mnu
+		position: fixed
+		line-height: 50px
+		left: 0
+		right: 0
+		z-index: 100
+	.head-mnu__logo
+		display: inline-block
+
+.nav
+	margin: 0 auto
+	padding: 0
+	height: 50px
+	display: inline-block
+	list-style-type: none
+	float: right
+	text-transform: uppercase
+	&__item
+		display: inline-block
+		float: left
+		margin: 0 20px
+	&__item-link
+		@include transition(all .5s $ease-out-expo)
+
+/* Sandwich Btn */
+
+$w: 40px
+$h: 4px
+
+#sandwich 
+	width: $w
+	height: $w
+	margin: 5px
+	position: relative
+	display: none
+	float: right
+
+.sw-topper
+	position: absolute
+	display: block
+	top: $h * 2
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	/* transition-delay: 0.2s, 0s; */
+
+.sw-bottom
+	position: absolute
+	width: $w
+	height: $h
+	top: $h * 4
+
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s 
+
+.sw-footer
+	position: absolute
+	width: $w
+	height: $h
+	top: $h * 6
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: .1s
+
+#sandwich.active 
+	.sw-topper
+		top: 17px
+		transform: rotate(135deg)
+	.sw-bottom
+		top: 17px
+		transform: rotate(-135deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+/* End Sandwich Btn */
+
+.head-main
+	margin-top: 30%
+	text-align: center
+	text-transform: uppercase
+	&__name
+		display: inline-block
+		margin: 0
+		padding: 15px 25px
+		border: 5px solid
+		color: #fff
+	&__descr
+		margin-top: 20px
+		font-weight: 600
+		
+.sect-head
+	display: block
+	padding-bottom: 70px
+	text-align: center
+	text-transform: uppercase
+	&__name
+		margin: 5px
+		font-size: 25px
+	&__descr
+		position: relative
+		font-weight: 400
+		margin-top: 0
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			width: 100px
+			margin-left: -50px
+			margin-top: 30px
+			border-bottom: 1px solid #000
+			top: 100%
+			left: 50%
+
+.about-me,
+.about-img,
+.about-addr
+	&__head
+		margin-bottom: 30px
+		text-align: center
+
+.about-me
+	&__item
+		line-height: 15px
+		font-weight: 500
+
+.about-img
+	text-align: center
+	&__item
+		width: 100%
+		max-width: 250px
+		border-radius: 50%
+
+.resume
+	padding: 0 15px
+	&__head
+		margin-bottom: 10px
+	&__icon
+		font-size: 60px
+	&__item
+		margin: 10px 0
+		&__date
+			display: inline-block
+			padding: 7px 15px
+			margin-bottom: 15px
+			font-weight: 600
+		&__place
+			font-size: 20px
+			line-height: 20px
+			font-weight: bold
+			text-transform: uppercase
+			span
+				margin: 0 20px
+				font-size: 10px
+				text-transform: none
+._work
+	text-align: right
+	border-right: 1px solid #000
+
+.port
+	&__nav
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+		text-align: center
+		list-style-type: none
+		&__item
+			margin: 10px 10px
+			text-transform: uppercase
+			display: inline-block
+			cursor: pointer
+	&__main
+		&__item
+			display: none
+			padding: 0
+			&__img
+				width: 100%
+			&__hover
+				position: absolute
+				width: 100%
+				height: 100%
+				text-align: center
+				left: 0
+				top: 0
+				opacity: 0
+				transition: all .3s
+				&__head
+					font-weight: 400
+					text-transform: uppercase
+				&__descr
+					display: block
+				&__btn
+					display: inline-block
+					padding: 5px 20px
+					margin-top: 10px
+					background: transparent
+					border: 1px solid #fff
+				&:hover
+					padding-top: 20px
+					opacity: 1
+			&__capt
+				position: relative
+				max-width: 600px
+				padding: 20px
+				margin: auto
+				background-color: #fff
+				&__head
+					text-transform: uppercase
+					font-weight: 400
+					text-align: center
+				&__img
+					width: 100%			
+
+.contact
+	&__item
+		margin-bottom: 20px
+		&__icon
+			font-size: 30px
+		&__head
+			margin-top: 0
+			text-transform: uppercase
+			font-weight: bold
+
+.form
+	&__item
+		display: block
+		width: 100%
+		margin: 20px 0
+		padding: 10px
+		background-color: transparent
+		-webkit-box-shadow: none
+		box-shadow: none
+		&__input
+		&__btn
+			text-transform: uppercase
+			font-weight: bold
+						
+.footer-lay
+	padding: 30px 0			
